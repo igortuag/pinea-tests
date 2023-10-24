@@ -5,8 +5,12 @@ const counterStore = useCounterStore()
 
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <p>Counter: {{ counterStore.count }}</p>
+    <section>
+      <h1>This is an about page</h1>
+      <p>Counter: {{ counterStore.count }}</p>
+      <p>Double Count: {{ counterStore.doubleCount }}</p>
+      <button @click="counterStore.increment">increment</button>
+    </section>
   </div>
 </template>
 
